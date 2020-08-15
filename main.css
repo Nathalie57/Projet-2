@@ -27,11 +27,6 @@ h1 {
     text-align: left;
 }
 
-.bold {
-    font-weight: 600;
-    padding-bottom: 0.7rem;
-}
-
 article {
     padding: 1rem;
 }
@@ -190,6 +185,11 @@ header {
         width:120px;
         height:120px;
         border: solid 0.2rem #DAAF12;
+}
+
+h4 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
 }
 
 .yellow-name {
