@@ -12,6 +12,13 @@ body {
     font-family: "Roboto";
 }
 
+.list {
+    background-color: #f7f7f7;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-top: 1rem;
+}
+
 h1 {
     font-weight: 300;
 }
@@ -74,13 +81,6 @@ h2.black:after {
     font-family: "Font Awesome 5 Free";
     color: var(--yellow);
     margin-right: .5rem;
-}
-
-article li {
-    margin: 0;
-    background-color: #f7f7f7;
-    padding: 1rem;
-    border-radius: .5rem;
 }
 
 article section {
@@ -205,7 +205,7 @@ header {
     }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
     .container {
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -246,16 +246,13 @@ header {
         margin-left: 2rem;
         margin-right: 0;
     }
-}
 
-@media screen AND (min-width:768px) {
-    li span {
-    display: block;
-    }
-}
-
-@media screen AND (min-width:1024px) {
-    article li {
+    article span {
+        display: block;
+        text-align: left;
+        }
+    
+    .list {
         background-color: white;
         display: flex;
         padding: 0;
@@ -277,9 +274,22 @@ header {
     ul.padding {
         text-align:left;
     }
+}
 
+@media screen AND (min-width:1024px) {
     .recommendation ul {
         display: flex;
         text-align: left;
+    }
+
+    .recommendation li {
+        width: 50%;
+    }
+}
+
+@media (min-width: 2560px) {
+    .container {
+        display: grid;
+        grid-template-columns: 2fr 7fr;
     }
 }
